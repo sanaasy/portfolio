@@ -1,0 +1,84 @@
+#Header {
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 5rem 3rem;
+}
+
+.LogoContainer {
+  /* padding: 2rem; */
+}
+
+.Logo {
+  width: 10vh;
+}
+
+.Resume {
+  position: absolute;
+  text-decoration: none;
+  font-size: calc(10px + 1vmin);
+  top: calc(15px + 1.05vmin);
+  right: calc(15px + 1.05vmin);
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  padding: 0.55rem 1rem;
+  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s, color 200ms ease-in 0s;
+}
+
+.Resume:hover, .Resume:focus {
+  border-color: #88C0D0;
+  color: #88C0D0;
+}
+
+.ImgContainer {
+  padding-right: 4rem;
+}
+
+.Img {
+  height: 25vh;
+  width: 25vh;
+  pointer-events: none;
+}
+
+.TextContainer {
+  padding-left: 1.5rem;
+}
+
+.Title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.TypedText {
+  margin: 0;
+  padding-top: 0;
+  font-size: 20px;
+}
+
+.Link {
+  margin-top: 7vh;
+  padding: 0;
+}
+
+.Social {
+  margin: 0 3vh;
+  font-size: calc(16px + 3vmin);
+  display: inline;
+  text-decoration: none;
+}
+
+.Social:hover img {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.25);
+}
+
+.Social a {
+  text-decoration: none;
+}
+
+.Social img {
+  width: 50px;
+}
