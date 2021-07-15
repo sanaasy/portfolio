@@ -1,24 +1,20 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './styles/Box.module.css';
 
 export enum Category {
-  Work = 'Work',
+  Experience = 'Experience',
   Project = 'Project'
 }
 
-interface Props {
-  title: string
-  duration: string 
-  category: Category
+type LanguageBox = {
+  language: string;
+  colour: string;
 }
 
-const Box = ({title, duration, category, ...props} : Props) => {
+const Box = ({language, colour} : LanguageBox) => {
   return (
-    <div className={styles.Outer}>
-      <div className={styles.Box}>
-        <p>{title}</p>
-        <p>{duration}</p>
-      </div>
+    <div className={styles.Language} style={{ backgroundColor: colour}}>
+      <div>{language}</div>
     </div>
   );
 };
