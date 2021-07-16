@@ -2,7 +2,7 @@
   position: fixed; 
   width: 10em;
   height: 2em;
-  left: 10%;
+  left: 10vh;
   bottom: 40px;
   border-radius: 12px;
   border: 1px solid black;
@@ -19,7 +19,30 @@
   align-items: center;
   margin-top: 0.3rem;
 }
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+
+.Link {
+  position: fixed; 
+  bottom: 40px;
+  left: 130vh;
+  padding: 0;
+}
+
+.Social {
+  margin: 0 3vh;
+  display: inline;
+  text-decoration: none;
+}
+
+.Social:hover img {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.25);
+}
+
+.Social a {
+  text-decoration: none;
+}
+
+.Social img {
+  width: 30px;
 }
