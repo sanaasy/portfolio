@@ -1,0 +1,25 @@
+.Button {
+  position: fixed; 
+  width: 10em;
+  height: 2em;
+  left: 10%;
+  bottom: 40px;
+  border-radius: 12px;
+  border: 1px solid black;
+  background: #C4C4C4;
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

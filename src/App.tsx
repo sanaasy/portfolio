@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Showcase from './Showcase';
 import Footer from './Footer';
+import ScrollButton from './ScrollButton';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Showcase />
       <hr />
       <Footer />
+      <ScrollButton />
     </div>
   );
 }

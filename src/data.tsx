@@ -39,6 +39,96 @@ const experience: TimelineItemData[] = [
       'b',
       'a'
     ]
+  },
+  {
+    title: 'CARD 1',
+    duration: 'jan 2019 - present',
+    category: Category.Experience,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
+  },
+  {
+    title: 'CARD 2',
+    duration: 'jan 2019 - present',
+    category: Category.Project,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
+  },
+  {
+    title: 'CARD 1',
+    duration: 'jan 2019 - present',
+    category: Category.Experience,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
+  },
+  {
+    title: 'CARD 2',
+    duration: 'jan 2019 - present',
+    category: Category.Project,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
+  },
+  {
+    title: 'CARD 1',
+    duration: 'jan 2019 - present',
+    category: Category.Experience,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
+  },
+  {
+    title: 'CARD 2',
+    duration: 'jan 2019 - present',
+    category: Category.Project,
+    languages: [
+      'link',
+    ],
+    description: [
+      'a',
+      'b',
+      'a',
+      'b',
+      'a'
+    ]
   }
 ];
 
