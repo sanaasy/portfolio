@@ -1,0 +1,33 @@
+.Link {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+.Link:hover span::before, .Link:focus span::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.Link span {
+  position: relative;
+  display: inline-block;
+  color: #88C0D0;
+}
+
+.Link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #56A5BC;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #56A5BC;
+          text-decoration-color: #56A5BC;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Showcase from './Showcase';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <hr />
       <Showcase />
       <hr />
+      <Footer />
     </div>
   );
 }

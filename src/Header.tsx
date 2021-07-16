@@ -13,12 +13,12 @@ import styles from './styles/Header.module.css';
 const Header = () => {
   return (
     <span>
-      <div className={styles.LogoContainer}>
+      <div>
           <img src={logo} alt="logo" className={styles.Logo} />
       </div>
       <header id={styles.Header}>
         <a className={styles.Resume} href="/resume.pdf">
-          Resume
+          check out my <strong>resume</strong>
         </a>
         <div className={styles.ImgContainer}>
           <img src={sanaa} alt="sanaa syed" className={styles.Img} />
