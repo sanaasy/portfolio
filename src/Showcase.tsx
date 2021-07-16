@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles/Showcase.module.css';
-import Box from './Box';
 import { useState } from 'react';
 import {Category} from './Box'
 
@@ -17,8 +16,8 @@ import {
 type FilterOption = 'All' | Category;
 
 const COLOUR: {[key in FilterOption]: string} = {
-  All: '#FF6F59',
-  [Category.Experience]: '#8B2635',
+  All: '#8B2635',
+  [Category.Experience]: '#6C91C2',
   [Category.Project]: '#BE95C4',
 };
 
@@ -26,7 +25,7 @@ const Showcase = () => {
   const [filter, setFilter] = useState<FilterOption>('All');
 
   return (
-    <section>
+    <section className={styles.Experience}>
       <div className={styles.FilterControl}>
         {Object.entries(COLOUR).map(([category, colour]) => {
           return (

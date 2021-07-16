@@ -8,6 +8,7 @@ function App() {
       <Header />
       <hr />
       <Showcase />
+      <hr />
     </div>
   );
 }

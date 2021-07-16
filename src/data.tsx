@@ -11,7 +11,7 @@ export type TimelineItemData = {
 
 const experience: TimelineItemData[] = [
   {
-    title: 'Shopify - Checkout',
+    title: 'CARD 1',
     duration: 'jan 2019 - present',
     category: Category.Experience,
     languages: [
@@ -20,15 +20,24 @@ const experience: TimelineItemData[] = [
     description: [
       'a',
       'b',
+      'a',
+      'b',
+      'a'
     ]
   },
   {
-    title: 'Shopify - Checkou23e32rt',
+    title: 'CARD 2',
     duration: 'jan 2019 - present',
     category: Category.Project,
+    languages: [
+      'link',
+    ],
     description: [
       'a',
-      'b'
+      'b',
+      'a',
+      'b',
+      'a'
     ]
   }
 ];

@@ -41,22 +41,22 @@ const Header = () => {
           <ul className={styles.Link}>
             <li className={styles.Social}>
               <a
-                href="https://www.github.com/sanaasy"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Github"
-              >
-                <img src={github} alt="github"/>
-              </a>
-            </li>
-            <li className={styles.Social}>
-              <a
                 href="https://www.linkedin.com/in/sanaasy/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Linkedin"
               >
                 <img src={linkedin} alt="linkedin"/>
+              </a>
+            </li>
+            <li className={styles.Social}>
+              <a
+                href="https://www.github.com/sanaasy"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
+                <img src={github} alt="github"/>
               </a>
             </li>
             <li className={styles.Social}>
@@ -69,7 +69,7 @@ const Header = () => {
                 <img src={medium} alt="medium"/>
               </a>
             </li>
-            <li className={styles.Social}>
+            {/* <li className={styles.Social}>
               <a
                 href="mailto:sanaasyed.t@gmail.com"
                 target="_blank"
@@ -78,7 +78,7 @@ const Header = () => {
               >
                 <img src={email} alt="email"/>
               </a>
-            </li>
+            </li> */}
           </ul>
         </article>
       </header>

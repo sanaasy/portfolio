@@ -6,41 +6,47 @@
 }
 
 .Box {
-  background: #C4C4C4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #C4C4C4;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 7px;
   width: 600px;
-  height: 200px;
+  min-height: 200px;
+  overflow:hidden;
   margin: 1rem;
+  z-index: 0;
 }
 
 .Category {
-  height: 202px;
+  min-height: 250px;
   width: 30px;
   border-radius: 7px;
   position: absolute;
   float: left;
   z-index: 1;
+  overflow:hidden;
 }
 
 .FilterControl {
   display: flex;
   justify-content: center;
   margin: 2rem 1rem 0rem;
-  font-size: calc(20px + 0.6vw);
+  font-size: calc(20px + 0.2vw);
 }
 
 .FilterButton {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
   margin: 0 3rem;
+  width: 6em;
 }
 
 .FilterControl button:hover, .FilterControl button:focus, .FilterControl .active {
-  outline: none;
-  font-weight: 700;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 3rem;
 }
 
 .TextContainer {
@@ -49,12 +55,11 @@
 
 .Duration {
   text-transform: uppercase;
-  /* width: 0.2rem; */
+  /* width: 3rem; */
   float: left;
-  /* word-wrap: break-word; */
   position: absolute;
   z-index: 2;
-  margin-top: 6rem;
+  margin-top: 7.25rem;
   margin-left: -3.5rem;
   /* padding-left: 0.7rem; */
   color: white;
@@ -83,3 +88,4 @@
   justify-content: center;
   color: white;
 }
+
