@@ -14,6 +14,7 @@ const COLOUR: {[key in FilterOption]: string} = {
   All: '#8B2635',
   [Category.Work]: '#6C91C2',
   [Category.Project]: '#BE95C4',
+  [Category.Experience] : '#A0CA92'
 };
 
 const Showcase = () => {
@@ -74,7 +75,7 @@ const Showcase = () => {
                     {languagesButtons}
                     { (languagesButtons !== null) ? <br/> : '' }
                     {description.map((point) => {
-                      return <p>◦ {point}</p>
+                      return <p style={{width: '97%'}}>◦ {point}</p>
                     })}
                   </div>
                 </div>

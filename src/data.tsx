@@ -2,7 +2,8 @@ import {ReactNode} from 'react';
 
 export enum Category {
   Work = 'Work',
-  Project = 'Project'
+  Project = 'Project',
+  Experience = 'Experience'
 }
 
 export type TimelineItemData = {
@@ -60,10 +61,40 @@ const experience: TimelineItemData[] = [
     subtitle: 'Backend Developer',
     duration: 'may 2020 - may 2021',
     category: Category.Work,
+    languages: [
+      'ruby on rails',
+      'graphql',
+      'sql'
+    ],
     description: [
       'Modelled database objects for fulfillments and orders in SQL',
       'Implemented features in internal applications using GraphQL models and queries and a front-end/back-end components using Ruby and Rails',
       'Provided input to technical design documents and during sprint planning meetings and reviewed pull requests, pushing more quality code to production'
+    ]
+  },
+  {
+    title: 'Technovation - Ottawa Chapter',
+    subtitle: 'Mentor',
+    duration: 'jan 2020 - apr 2021',
+    category: Category.Experience,
+    description: [
+      'Mentored 200+ young women ranging from ages 13 to 17',
+      'Helped them with developing their coding skills to create a functional mobile application and their business skills (product pitches & marketing strategies',
+    ]
+  },
+  {
+    title: 'Royal Bank of Canada - Tech Labs',
+    subtitle: 'Innovation Developer',
+    duration: 'july 2019 - august 2019',
+    category: Category.Work,
+    languages: [
+      'angularJS',
+      'html/css',
+      'jira'
+    ],
+    description: [
+      'Designed and improved the User Interface of a proprietary Human Resources system (used by over 1700 RBC employees) by using AngularJS and HTML/CSS.',
+      'Presented solutions in weekly demos and pitched a feature prototype (received the Recognition of Excellence on Demo Day award).',
     ]
   },
 ];
