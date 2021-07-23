@@ -1,8 +1,13 @@
 import {ReactNode} from 'react';
-import {Category} from './Box'
+
+export enum Category {
+  Work = 'Work',
+  Project = 'Project'
+}
 
 export type TimelineItemData = {
   title: string;
+  subtitle: string;
   duration: string;
   category: Category;
   languages?: string[];
@@ -11,125 +16,56 @@ export type TimelineItemData = {
 
 const experience: TimelineItemData[] = [
   {
-    title: 'CARD 1',
-    duration: 'jan 2019 - present',
-    category: Category.Experience,
+    title: 'Shopify - Shop App',
+    subtitle: 'Mobile Developer',
+    duration: 'may 2021 - present',
+    category: Category.Work,
     languages: [
-      'link',
+      'react native',
+      'typescript',
+      'graphql'
     ],
     description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
+      'Implementing features on the in-app marketplace on the Shop App using React Native'
     ]
   },
   {
-    title: 'CARD 2',
-    duration: 'jan 2019 - present',
+    title: 'Canadian Undergrad Tech Conference (CUTC) - Tech Team',
+    subtitle: 'Frontend and Backend Developer',
+    duration: 'sept 2020 - present',
     category: Category.Project,
     languages: [
-      'link',
+      'vue',
+      'php',
+      'javascript'
     ],
     description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
+      'Implementing features on the in-app marketplace on the Shop App using React Native'
     ]
   },
   {
-    title: 'CARD 1',
-    duration: 'jan 2019 - present',
-    category: Category.Experience,
-    languages: [
-      'link',
-    ],
+    title: 'Carleton University - Discrete Structures',
+    subtitle: 'Teaching Assistant',
+    duration: 'may 2021 - june 2021',
+    category: Category.Work,
     description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
+      'Utilized a variety of teaching methods to aid students in learning discrete mathematics 1',
+      'Answered questions in class forums and office hours about student work, and ensured students understood why theorems worked the way it did and what to expect to occur if they made changes.',
+      'Used a variety of teaching methods to ensure the students understood the material, which increased the efficacy of weekly office hours',
+      'Corrected assignments and tests with a great attention to detail in a timely manner so assignments can be returned to students promptly'
     ]
   },
   {
-    title: 'CARD 2',
-    duration: 'jan 2019 - present',
-    category: Category.Project,
-    languages: [
-      'link',
-    ],
+    title: 'Shopify - Orders & Fulfillments',
+    subtitle: 'Backend Developer',
+    duration: 'may 2020 - may 2021',
+    category: Category.Work,
     description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
+      'Modelled database objects for fulfillments and orders in SQL',
+      'Implemented features in internal applications using GraphQL models and queries and a front-end/back-end components using Ruby and Rails',
+      'Provided input to technical design documents and during sprint planning meetings and reviewed pull requests, pushing more quality code to production'
     ]
   },
-  {
-    title: 'CARD 1',
-    duration: 'jan 2019 - present',
-    category: Category.Experience,
-    languages: [
-      'link',
-    ],
-    description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
-    ]
-  },
-  {
-    title: 'CARD 2',
-    duration: 'jan 2019 - present',
-    category: Category.Project,
-    languages: [
-      'link',
-    ],
-    description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
-    ]
-  },
-  {
-    title: 'CARD 1',
-    duration: 'jan 2019 - present',
-    category: Category.Experience,
-    languages: [
-      'link',
-    ],
-    description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
-    ]
-  },
-  {
-    title: 'CARD 2',
-    duration: 'jan 2019 - present',
-    category: Category.Project,
-    languages: [
-      'link',
-    ],
-    description: [
-      'a',
-      'b',
-      'a',
-      'b',
-      'a'
-    ]
-  }
 ];
 
 export {experience};

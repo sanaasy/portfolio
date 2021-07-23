@@ -36,7 +36,7 @@ const ScrollButton = () =>{
         </button>
 
         <div>
-        <ul className={styles.Link}>
+          <ul className={styles.Link}>
             <li className={styles.Social}>
               <a
                 href="https://www.linkedin.com/in/sanaasy/"

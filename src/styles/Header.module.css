@@ -1,7 +1,6 @@
 #Header {
   display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   padding: 3rem;
 }
 
@@ -39,19 +38,18 @@
 }
 
 .TextContainer {
-  padding-left: 1.5rem;
+  max-width: 40vmin;
 }
 
 .Title {
-  font-size: 36px;
+  font-size: calc(16px + 2vmin);
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .TypedText {
   margin: 0;
-  padding-top: 0;
-  font-size: 20px;
+  font-size: calc(10px + 1vmin);
 }
 
 .Link {
@@ -60,8 +58,7 @@
 }
 
 .Social {
-  margin: 0 3vh;
-  font-size: calc(16px + 3vmin);
+  padding: 0 7vh 0 0;
   display: inline;
   text-decoration: none;
 }
@@ -77,5 +74,46 @@
 }
 
 .Social img {
-  width: 50px;
+  width: 3.125rem;
+}
+
+@media only screen and (max-device-width : 800px) {
+  #Header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .TextContainer {
+    max-width: 60vmin;
+    margin-left: 2rem;
+  }
+
+  .Link {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-device-width : 500px) {
+  #Header {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .ImgContainer {
+    padding: 8rem 0rem 2rem;
+  }
+
+  .Img {
+    height: 60vw;
+    width: 60vw;
+  }
+
+  .Social img {
+    width: 1.25rem;
+  }
 }

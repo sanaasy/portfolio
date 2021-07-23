@@ -1,23 +1,18 @@
 import React from 'react';
 import styles from './styles/Showcase.module.css';
 import { useState } from 'react';
-import {Category} from './Box'
 
 import {
   TimelineItemData,
   experience,
+  Category
 } from './data';
-
-// export enum Category {
-//   Experience = 'Experience',
-//   Project = 'Project'
-// }
 
 type FilterOption = 'All' | Category;
 
 const COLOUR: {[key in FilterOption]: string} = {
   All: '#8B2635',
-  [Category.Experience]: '#6C91C2',
+  [Category.Work]: '#6C91C2',
   [Category.Project]: '#BE95C4',
 };
 
@@ -46,6 +41,7 @@ const Showcase = () => {
         {experience.map(
           ({
             title,
+            subtitle,
             duration,
             category,
             languages,
@@ -57,10 +53,10 @@ const Showcase = () => {
             let languagesButtons = null;
             if (languages) {
               languagesButtons = (
-                <div className={styles.Language} style={{ backgroundColor: COLOUR[category]}}>
+                <div>
                   {languages.map((language) => {
                     return (
-                      <div>{language}</div>
+                      <div className={styles.Language} style={{ backgroundColor: COLOUR[category]}}>{language}</div>
                     );
                   })}
                 </div>
@@ -70,16 +66,16 @@ const Showcase = () => {
             return (
               <div className={styles.Outer}>
                 <div className={styles.Box}>
-                  <h4 className={styles.Duration}>{duration}</h4>
+                  {/* <h4 className={styles.Duration}>{duration}</h4> */}
                   <div style={{backgroundColor: COLOUR[category]}} className={styles.Category} />
                   <div className={styles.TextContainer}>
                     <div className={styles.Title}>{title}</div>
-                    <div>{languagesButtons}</div>
-                    <div>
-                      {description.map((point) => {
-                       return <p>◦ {point}</p>
-                      })}
-                    </div>
+                    <div className={styles.Subtitle}>{subtitle} / {duration}</div>
+                    {languagesButtons}
+                    { (languagesButtons !== null) ? <br/> : '' }
+                    {description.map((point) => {
+                      return <p>◦ {point}</p>
+                    })}
                   </div>
                 </div>
               </div>

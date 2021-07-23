@@ -2,8 +2,8 @@
   position: fixed; 
   width: 10em;
   height: 2em;
-  left: 10vh;
-  bottom: 40px;
+  left: 3em;
+  bottom: 2em;
   border-radius: 12px;
   border: 1px solid black;
   background: #C4C4C4;
@@ -22,21 +22,19 @@
 
 .Link {
   position: fixed; 
-  bottom: 40px;
-  left: 130vh;
+  bottom: 1.25em;
+  right: 3em;
   padding: 0;
 }
 
 .Social {
-  margin: 0 3vh;
+  margin: 0 1vh;
   display: inline;
   text-decoration: none;
 }
 
 .Social:hover img {
   cursor: pointer;
-  transition: 0.2s;
-  transform: scale(1.25);
 }
 
 .Social a {
@@ -44,5 +42,5 @@
 }
 
 .Social img {
-  width: 30px;
+  width: 1.875rem;
 }

@@ -23,7 +23,6 @@ const Header = () => {
         <div className={styles.ImgContainer}>
           <img src={sanaa} alt="sanaa syed" className={styles.Img} />
         </div>
-        {/* <hr /> */}
         <article>
           <div className={styles.TextContainer}>
             <p className={styles.Title}>

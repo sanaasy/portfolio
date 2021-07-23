@@ -6,24 +6,19 @@
 }
 
 .Box {
+  position: relative;
   border: 1px solid #C4C4C4;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 7px;
   width: 600px;
-  min-height: 200px;
-  overflow:hidden;
   margin: 1rem;
-  z-index: 0;
 }
 
 .Category {
-  min-height: 250px;
-  width: 30px;
+  height: 100%;
+  width: 20px;
   border-radius: 7px;
   position: absolute;
   float: left;
-  z-index: 1;
-  overflow:hidden;
 }
 
 .FilterControl {
@@ -50,31 +45,33 @@
 }
 
 .TextContainer {
-  padding-left: 2.75rem;
+  padding-left: 2.2rem;
 }
 
 .Duration {
   text-transform: uppercase;
-  /* width: 3rem; */
-  float: left;
   position: absolute;
-  z-index: 2;
-  margin-top: 7.25rem;
-  margin-left: -3.5rem;
-  /* padding-left: 0.7rem; */
-  color: white;
+  z-index: 1;
+  color: black;
   font-size: 14px;
   font-style: italic;
-  /* margin-bottom: 1em; */
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
 }
 
 .Title {
   font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 18px;
+  /* text-transform: uppercase; */
   margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+.Subtitle {
+  font-size: 14px;
   margin-bottom: 0.5rem;
+  color: #777676;
+  font-style: italic;
 }
 
 .Language {
@@ -87,5 +84,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  float: left;
+  margin: 0 0.5rem 0  0;
+  font-size: 12px;
 }
 
