@@ -17,7 +17,7 @@ const Header = () => {
           <img src={logo} alt="logo" className={styles.Logo} />
       </div>
       <header id={styles.Header}>
-        <a className={styles.Resume} href="/resume.pdf">
+        <a className={styles.Resume} target="no_blank" href="/resume.pdf">
           check out my <strong>resume</strong>
         </a>
         <div className={styles.ImgContainer}>

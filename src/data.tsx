@@ -41,7 +41,8 @@ const experience: TimelineItemData[] = [
       'javascript'
     ],
     description: [
-      'Implementing features on the in-app marketplace on the Shop App using React Native'
+      'Created the Canadian Undergrad Tech Conference (CUTC) 2021 website using Vue, Javascript, PHP and HTML/CSS.',
+      'Organized the online platform, Hopin, for an easy participant and speaker experience'
     ]
   },
   {

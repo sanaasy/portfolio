@@ -80,7 +80,6 @@
 .Language {
   width: 100px;
   height: 20px;
-  border: 1px solid #777676;
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
@@ -88,7 +87,8 @@
   justify-content: center;
   color: white;
   float: left;
-  margin: 0 0.5rem 0  0;
-  font-size: 12px;
+  margin: 0 1.5rem 0  0;
+  font-size: 13px;
+  font-weight: bold;
 }
 
