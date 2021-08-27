@@ -20,9 +20,9 @@ const Header = () => {
         <a className={styles.Resume} target="no_blank" href="/resume.pdf">
           check out my <strong>resume</strong>
         </a>
-        <div className={styles.ImgContainer}>
+        {/* <div className={styles.ImgContainer}>
           <img src={sanaa} alt="sanaa syed" className={styles.Img} />
-        </div>
+        </div> */}
         <article>
           <div className={styles.TextContainer}>
             <p className={styles.Title}>
@@ -30,7 +30,7 @@ const Header = () => {
             </p>
             <p className={styles.TypedText}>
               <ReactTypingEffect
-                text={["Software Developer @ Shopify"]}
+                text={["Software Developer @ Shopify", "CS and Business"]}
                 speed={100}
                 typingDelay={1000}
                 eraseSpeed={100}
@@ -68,7 +68,7 @@ const Header = () => {
                 <img src={medium} alt="medium"/>
               </a>
             </li>
-            {/* <li className={styles.Social}>
+            <li className={styles.Social}>
               <a
                 href="mailto:sanaasyed.t@gmail.com"
                 target="_blank"
@@ -77,7 +77,7 @@ const Header = () => {
               >
                 <img src={email} alt="email"/>
               </a>
-            </li> */}
+            </li>
           </ul>
         </article>
       </header>

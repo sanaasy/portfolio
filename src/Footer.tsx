@@ -5,8 +5,8 @@ import Link from './Link';
 const Footer = () => {
   return (
     <span className={styles.Footer}>
-      {/* <div className={styles.Connect}>Let's connect!</div> */}
-      <div className={styles.Subtitle}>Email me at {' '}
+      <div className={styles.Subtitle}>
+        Email me at {' '}
         <Link
           href="mailto:sanaasyed.t@gmail.com"
           text="sanaasyed.t@gmail.com"

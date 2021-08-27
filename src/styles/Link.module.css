@@ -22,13 +22,13 @@
 .Link span::before {
   position: absolute;
   content: attr(data-content);
-  color: #8B2635;
+  /* color: #8B2635; */
   transition: -webkit-clip-path 275ms ease;
   transition: clip-path 275ms ease;
   transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
   text-decoration: underline;
-  -webkit-text-decoration-color: #8B2635;
-          text-decoration-color: #8B2635;
+  /* -webkit-text-decoration-color: #8B2635;
+          text-decoration-color: #8B2635; */
   -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
           clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
 }
