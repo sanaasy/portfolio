@@ -1,5 +1,5 @@
 .Outer {
-  position:relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
 
 .Box {
   position: relative;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   border-radius: 7px;
   width: 600px;
   margin-left: 2rem;
@@ -40,7 +40,9 @@
   width: calc(3em - 0.2vw);
 }
 
-.FilterControl button:hover, .FilterControl button:focus, .FilterControl .active {
+.FilterControl button:hover,
+.FilterControl button:focus,
+.FilterControl .active {
   font-weight: bold;
   background: none;
   border: none;
@@ -87,8 +89,18 @@
   justify-content: center;
   color: white;
   float: left;
-  margin: 0 1.5rem 0  0;
+  margin: 0 1.5rem 0 0;
   font-size: 13px;
   font-weight: bold;
 }
 
+.Link {
+  color: black;
+  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s,
+    color 200ms ease-in 0s;
+}
+
+.Link:hover,
+.Link:focus {
+  font-weight: bold;
+}

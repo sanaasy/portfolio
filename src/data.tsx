@@ -6,12 +6,18 @@ export enum Category {
   Experience = 'Experience'
 }
 
+type Link = {
+  text: string;
+  url: string;
+}
+
 export type TimelineItemData = {
   title: string;
   subtitle: string;
   duration: string;
   category: Category;
   languages?: string[];
+  link?: Link;
   description: ReactNode[];
 };
 
@@ -40,6 +46,10 @@ const experience: TimelineItemData[] = [
       'php',
       'javascript'
     ],
+    link: {
+      text: 'CUTC 2021',
+      url: 'https://cutc.ca/#/'
+    },
     description: [
       'Created the Canadian Undergrad Tech Conference (CUTC) 2021 website using Vue, Javascript, PHP and HTML/CSS.',
       'Organized the online platform, Hopin, for an easy participant and speaker experience'

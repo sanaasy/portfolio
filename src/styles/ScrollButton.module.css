@@ -6,16 +6,16 @@
   left: 3em;
   bottom: 2em;
   text-decoration: none;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(6px + 1vmin);
   border: 1px solid black;
   border-radius: 0.25em;
   transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s, color 200ms ease-in 0s;
 }
 
 .Button:hover, .Button:focus {
-  border-color: #8B2635;
+  border-color: #6C91C2;
   color: white;
-  background: #8B2635;
+  background: #6C91C2;
 }
 
 .Button:hover {

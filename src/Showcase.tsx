@@ -46,6 +46,7 @@ const Showcase = () => {
             duration,
             category,
             languages,
+            link,
             description
           }: TimelineItemData) => {
             if (filter !== 'All' && filter !== category) return null;
@@ -73,7 +74,10 @@ const Showcase = () => {
                     <div className={styles.Title}>{title}</div>
                     <div className={styles.Subtitle}>{subtitle} / {duration}</div>
                     {languagesButtons}
-                    { (languagesButtons !== null) ? <br/> : '' }
+                    {link ? <a className={styles.Link} style={{color: COLOUR[category]}} target="no_blank" href={link?.url}>
+                      {link?.text}
+                    </a> : null}
+                    { (languagesButtons !== null) ? <br/> : null }
                     {description.map((point) => {
                       return <p style={{width: '97%'}}>◦ {point}</p>
                     })}

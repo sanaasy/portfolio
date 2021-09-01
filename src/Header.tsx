@@ -26,7 +26,7 @@ const Header = () => {
         <article>
           <div className={styles.TextContainer}>
             <p className={styles.Title}>
-              Hi, I&apos;m Sanaa Syed.
+              👋 Hi, I&apos;m Sanaa Syed.
             </p>
             <p className={styles.TypedText}>
               <ReactTypingEffect
