@@ -23,6 +23,15 @@ export type TimelineItemData = {
 
 const experience: TimelineItemData[] = [
   {
+    title: 'Carleton University - Google Developer Student Club',
+    subtitle: 'Vice President',
+    duration: 'aug 2021 - present',
+    category: Category.Experience,
+    description: [
+      'Creating a community of students interested in Google Developer technologies by hosting events and a podcast to foster learning. '
+    ]
+  },
+  {
     title: 'Shopify - Shop App',
     subtitle: 'Mobile Developer',
     duration: 'may 2021 - present',
